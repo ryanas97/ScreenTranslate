@@ -1,0 +1,44 @@
+name: Build APK
+
+# Runs on every push and when started by hand from the Actions tab.
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+          cp app/build/outputs/apk/debug/app-debug.apk ScreenTranslate.apk
+
+      # Downloadable from the Actions run page.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ScreenTranslate-apk
+          path: ScreenTranslate.apk
+
+      # Also published on the repo's Releases page so it can be downloaded straight to a phone.
+      - name: Publish to Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest ScreenTranslate.apk \
+            --title "Screen Translate (latest build)" \
+            --notes "Built from ${GITHUB_SHA::7}. Download ScreenTranslate.apk on your phone and open it to install."
