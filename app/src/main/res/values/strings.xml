@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Screen Translate</string>
+
+    <!-- Setup screen -->
+    <string name="intro">Translate any text on your screen, like Google Assistant\'s old screen translate. Text is read and translated on your phone.</string>
+    <string name="step1_title">1. Make it your digital assistant</string>
+    <string name="assistant_active">✓ Screen Translate is your assistant</string>
+    <string name="assistant_inactive">Not set up yet</string>
+    <string name="step1_body">Tap the button, choose Screen Translate as the \"Digital assistant app\", then on that same page turn on \"Use screenshot\" (and \"Use text from screen\" or \"Analyze text on screen\" if you see it).</string>
+    <string name="open_assistant_settings">Open assistant settings</string>
+
+    <string name="step2_title">2. Choose languages</string>
+    <string name="translate_to">Translate to</string>
+    <string name="text_script_label">Text on screen is written in</string>
+    <string name="text_script_hint">Latin letters cover English, Indonesian, Malay, Spanish, French, German, Vietnamese and most European languages. You can also switch this from the translate screen.</string>
+    <string name="download_pack">Download %1$s now (about 30 MB)</string>
+    <string name="downloading_pack">Downloading %1$s…</string>
+    <string name="pack_ready">%1$s works offline</string>
+    <string name="download_failed">Download failed. Check your internet connection and try again.</string>
+    <string name="packs_on_phone">Language packs on this phone: %1$s</string>
+    <string name="no_packs">No language packs yet. They download automatically the first time a language is needed.</string>
+
+    <string name="step3_title">3. Use it</string>
+    <string name="how_to">• Open any app with text you want to translate.\n• Long-press the Home button, or swipe up diagonally from a bottom corner if you use gesture navigation. On some phones it\'s a long-press of the power button.\n• The translation appears on top of the original text. Tap a translation to see the original and copy either one.\n• Tap \"Original\" to compare, or the language button to change languages.\n• Press Back or ✕ to close.</string>
+    <string name="privacy">Screenshots are processed on your phone and are never saved or uploaded. The internet is only used to download language packs. While this is your assistant, the Home long-press opens Screen Translate instead of Google Assistant or Gemini. You can switch back on the same settings page.</string>
+
+    <!-- Scripts -->
+    <string name="script_latin">ABC  Latin letters</string>
+    <string name="script_chinese">中文  Chinese</string>
+    <string name="script_japanese">日本語  Japanese</string>
+    <string name="script_korean">한국어  Korean</string>
+
+    <!-- Translate screen -->
+    <string name="status_capturing">Looking at your screen…</string>
+    <string name="status_reading">Reading text…</string>
+    <string name="status_downloading">Downloading %1$s language pack (first time only)…</string>
+    <string name="status_download_failed">Couldn\'t download the %1$s language pack. Check your internet connection.</string>
+    <string name="status_translating">Translating…</string>
+    <string name="status_done">Tap a translation to see the original or copy it</string>
+    <string name="status_no_text">No text found. If the text isn\'t in Latin letters, tap the language button and pick its script.</string>
+    <string name="status_already_in">This screen is already in %1$s. Tap the language button to choose another language.</string>
+    <string name="status_nothing_translated">Couldn\'t translate the text on this screen.</string>
+    <string name="status_error">Something went wrong: %1$s</string>
+    <string name="capture_error_title">Can\'t see this screen</string>
+    <string name="capture_error_body">Turn on \"Use screenshot\" for the digital assistant app in Settings. Some apps, such as banking apps or private browser tabs, block screenshots, so they can\'t be translated.</string>
+    <string name="open_settings">Open settings</string>
+    <string name="close">Close</string>
+    <string name="show_original">Original</string>
+    <string name="show_translation">Translation</string>
+    <string name="language_button">→ %1$s</string>
+    <string name="picker_script_title">Text on screen is written in</string>
+    <string name="picker_target_title">Translate to</string>
+    <string name="original">Original</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Copied</string>
+</resources>

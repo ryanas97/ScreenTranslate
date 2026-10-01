@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voice-interaction-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:recognitionService="app.screentranslate.NoSpeechRecognitionService"
+    android:sessionService="app.screentranslate.AssistantSessionService"
+    android:settingsActivity="app.screentranslate.MainActivity"
+    android:supportsAssist="true" />
